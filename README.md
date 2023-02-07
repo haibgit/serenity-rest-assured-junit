@@ -14,11 +14,6 @@ The template project comes with both Maven and Gradle build scripts. To run the 
 
     mvn clean verify
 
-## Use Gradle
-
-For gradle, pen a command window and run:
-
-    gradlew test 
 
 ## Viewing the reports
 
