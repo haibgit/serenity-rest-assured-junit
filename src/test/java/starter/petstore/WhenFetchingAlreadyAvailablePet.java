@@ -16,4 +16,17 @@ public class WhenFetchingAlreadyAvailablePet {
         petApi.whenIAskForAPetWithId(newPetId);
         petApi.thenISeeKittyAsResult();
     }
+
+    @Test
+    public void updateAnExistingPet() {
+        newPetId = petApi.givenKittyIsAvailableInPetStore();
+        petApi.whenUpdateNewNameToKitty(newPetId);
+        petApi.thenISeeDogAsResult();
+    }
+
+    @Test
+    public void callAPIFindByStatus() {
+        petApi.thenFind();
+
+    }
 }
